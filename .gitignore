@@ -1,0 +1,12 @@
+# Ignore Python virtual environment
+mindtune-env/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Spotify OAuth cache
+.cache
