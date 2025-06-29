@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MindTune - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 150px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #14833b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to MindTune Music Player</h1>
+    <p>Login with Spotify to view and manage your saved tracks.</p>
+    <a href="{{ url_for('login') }}">
+        <button>Login with Spotify</button>
+    </a>
+</body>
+</html>

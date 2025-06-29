@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Your Music</title></head>
+<body>
+    <h2>Your Saved Tracks</h2>
+    {% for track in tracks %}
+        <div>
+            <img src="{{ track.image }}" width="100" alt="Album art"><br>
+            <strong>{{ track.name }}</strong> by {{ track.artist }}<br>
+            {% if track.preview_url %}
+                <audio controls>
+                    <source src="{{ track.preview_url }}" type="audio/mpeg">
+                </audio>
+            {% endif %}
+            <hr>
+        </div>
+    {% endfor %}
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
