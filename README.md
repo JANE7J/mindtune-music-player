@@ -1,61 +1,83 @@
-🎧 MindTune – Mood-Based Music Player
+🎧 MindTune – Mood-Based Music App
 
-MindTune is a brainwave-inspired music player that simulates EEG signals to determine the user's mental state (Calm, Focused, or Neutral) and plays Spotify playlists accordingly.
+MindTune is an intelligent, mood-based music player that uses simulated brainwave signals to detect a user’s mental state—such as Calm, Focused, or Neutral—and plays suitable music playlists accordingly using online platforms like YouTube.
+🧠 Project Idea
 
-🧠 Key Features:-
-- 🧪 Simulates EEG brainwave data (Alpha & Beta waves)
-- 😌 Classifies mood as:
-  - Calm (High Alpha)
-  - Focused (High Beta)
-  - Neutral (Balanced)
-- 🎶 Plays matching Spotify playlists based on the mood
-- ⏯️ Controls for play, pause, and skip
-- 🎨 Displays current track info and album art
-- 🖥️ Simple web interface using Flask
+Inspired by Brain-Computer Interface (BCI) concepts, MindTune emulates EEG signals (Alpha and Beta waves) to identify emotional states. Based on the interpreted mood, it dynamically plays a playlist that aligns with the user's mental state, creating a personalized and immersive music experience.
+🔄 Workflow Overview
 
-🚀 Tech Stack:-
-- Python 🐍
-- Flask 🌐
-- Spotipy (Spotify Web API wrapper) 🎧
-- NumPy 🔢
-- HTML & CSS 💻
+    EEG Simulation: Randomized simulation of Alpha and Beta wave patterns.
 
- 📦 Installation
+    Mood Classification:
 
-1. Clone this repository:
+        High Alpha → Calm
 
-```bash
+        High Beta → Focused
+
+        `Balanced** → Neutral
+
+    Playlist Mapping: Based on the detected mood, appropriate playlist URLs are selected from platforms like YouTube.
+
+    Web Interface:
+
+        Shows mood status
+
+        Embeds YouTube music player
+
+        Displays track metadata (title, thumbnail, etc.)
+
+    Playback Controls: Basic play/pause/next functionality embedded into the player.
+
+🚀 Tech Stack
+
+    Python 🐍
+
+    Flask 🌐 – Lightweight web framework
+
+    NumPy 🔢 – Simulating brainwave values
+
+    HTML/CSS 🎨 – Frontend design
+
+    JavaScript 🎬 – Embedding and controlling YouTube player
+
+    YouTube Data API (Planned) 📺 – For dynamic playlist fetching
+
+📦 Setup Instructions
+
+    Clone the repository
+
 git clone https://github.com/JANE7J/mindtune-music-player.git
 cd mindtune-music-player
 
-2. Create and activate a virtual environment:
-python -m venv mindtune-env
-mind tune-env\Scripts\activate     # On Windows
+Create and activate virtual environment
 
-3. Install dependencies:
+python -m venv mindtune-env
+mindtune-env\Scripts\activate   # For Windows
+
+Install dependencies
+
 pip install -r requirements.txt
 
-4. Set environment variables:
-Create a .env file in the root with:
-FLASK_SECRET_KEY=your_flask_secret_key
-SPOTIPY_CLIENT_ID=your_spotify_client_id
-SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
-SPOTIPY_REDIRECT_URI=http://127.0.0.1:8888/callback
+Run the application
 
-5.Run the app:
-python app.py
+    python app.py
 
-Then open http://127.0.0.1:8888 in your browser
+    Open your browser and visit: http://127.0.0.1:8888
 
-📌 Note
+⚠️ Notes
 
-    ⚠️ Spotify Premium is required for playback control (play, pause, skip).
-    If you're using a free account, you can only view the current playing song.
+    This version simulates EEG signals. Real device integration is planned.
+
+    Currently supports YouTube playlists using embed links.
 
 💡 Future Enhancements
 
-    Integrate with real EEG devices (like Muse or OpenBCI)
+    🎧 Integrate with real EEG devices like Muse/OpenBCI.
 
-    Add recommendation system based on mood history
+    🔁 Mood-tracking history and session logs.
 
-    Export session logs / mood tracking
+    🎯 Personalized recommendations based on usage.
+
+    🔍 Auto-fetch playlists using YouTube Data API.
+
+    📱 Mobile-optimized UI for better accessibility.
