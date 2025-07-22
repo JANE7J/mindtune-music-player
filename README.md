@@ -44,19 +44,19 @@ Inspired by Brain-Computer Interface (BCI) concepts, MindTune emulates EEG signa
 
 ## 📦 Setup Instructions
 
-    Clone the repository
+Clone the repository
 
-git clone https://github.com/JANE7J/mindtune-music-player.git
-cd mindtune-music-player
+    git clone https://github.com/JANE7J/mindtune-music-player.git
+    cd mindtune-music-player
 
 Create and activate virtual environment
 
-python -m venv mindtune-env
-mindtune-env\Scripts\activate   # For Windows
+    python -m venv mindtune-env
+    mindtune-env\Scripts\activate   # For Windows
 
 Install dependencies
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Run the application
 
@@ -72,9 +72,8 @@ Run the application
 
 ## 💡 Future Enhancements
 
-    🎧 Integrate with real EEG devices like Muse/OpenBCI.
-
-    🔁 Mood-tracking history and session logs.
+🎧 Integrate with real EEG devices like Muse/OpenBCI.
+🔁 Mood-tracking history and session logs.
 
     🎯 Personalized recommendations based on usage.
 
