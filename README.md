@@ -1,10 +1,10 @@
-🎧 MindTune – Mood-Based Music App
+## 🎧 MindTune – Mood-Based Music App
 
 MindTune is an intelligent, mood-based music player that uses simulated brainwave signals to detect a user’s mental state—such as Calm, Focused, or Neutral—and plays suitable music playlists accordingly using online platforms like YouTube.
-🧠 Project Idea
+## 🧠 Project Idea
 
 Inspired by Brain-Computer Interface (BCI) concepts, MindTune emulates EEG signals (Alpha and Beta waves) to identify emotional states. Based on the interpreted mood, it dynamically plays a playlist that aligns with the user's mental state, creating a personalized and immersive music experience.
-🔄 Workflow Overview
+## 🔄 Workflow Overview
 
     EEG Simulation: Randomized simulation of Alpha and Beta wave patterns.
 
@@ -28,7 +28,7 @@ Inspired by Brain-Computer Interface (BCI) concepts, MindTune emulates EEG signa
 
     Playback Controls: Basic play/pause/next functionality embedded into the player.
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 
     Python 🐍
 
@@ -42,7 +42,7 @@ Inspired by Brain-Computer Interface (BCI) concepts, MindTune emulates EEG signa
 
     YouTube Data API (Planned) 📺 – For dynamic playlist fetching
 
-📦 Setup Instructions
+## 📦 Setup Instructions
 
     Clone the repository
 
@@ -70,7 +70,7 @@ Run the application
 
     Currently supports YouTube playlists using embed links.
 
-💡 Future Enhancements
+## 💡 Future Enhancements
 
     🎧 Integrate with real EEG devices like Muse/OpenBCI.
 
